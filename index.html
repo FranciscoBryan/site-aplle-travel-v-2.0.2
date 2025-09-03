@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Travel NYC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h2 class="titulo-principal">Apple Travel NYC</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuMobile">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="carrossel-container">
+    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://newyorkando.com.br/wp-content/uploads/2018/05/image-1.jpg" class="d-block w-100" alt="NYC Central Park"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnyandabout.com%2Fwp-content%2Fuploads%2F2022%2F06%2Fpor-do-sol-em-nova-york-2048x1470.jpg&f=1&nofb=1&ipt=4dabc969848f29d201751df09ef89e8adf9b76baf41d9146c9307979acac7371" class="d-block w-100" alt="NYC Times Square"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/471000/471836-Lower-Manhattan.jpg" class="d-block w-100" alt="Brooklyn Bridge"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="carrossel-conteudo">
+      <h1 class="text-warning">Explore Nova York</h1>
+      <p class="text-white">Descubra os pontos mais icônicos de New York com a Apple Travel</p>
+      <a href="#destinos" class="btn btn-warning">Ver Pacotes</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao-conteudo parallax">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>Somos especialistas em criar experiências únicas em Nova York City. De pontos turísticos famosos a lugares secretos, planejamos roteiros personalizados para você viver a Big Apple como nunca.</p>
+    </div>
+  </section>
+
+  <section id="destinos" class="secao-conteudo">
+    <div class="container">
+      <h2 class="text-center mb-5">Destinos em Nova York</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card destino-card">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.DIKePJgoVF_xwtL7PjkvhwHaFG%3Fpid%3DApi&f=1&ipt=9453dacc60c2afb97c1763c02591138897ddb6d1405ce36829225289019c2411&ipo=images" class="card-img-top" alt="Central Park">
+            <div class="card-body text-center">
+              <h5 class="card-title">Central Park</h5>
+              <p class="card-text">Pacote: 3 dias / 2 noites</p>
+              <p class="preco">A partir de R$ 1.200</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destino-card">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.sL4rXsDmKgYsPp3zu41MNQHaEo%3Fcb%3Dthfvnext%26pid%3DApi&f=1&ipt=652701a9a6a20a9de244cbe9a5d45befea5d71ed5bac6d80daf867395637dc24&ipo=images" class="card-img-top" alt="Times Square">
+            <div class="card-body text-center">
+              <h5 class="card-title">Times Square</h5>
+              <p class="card-text">Pacote: 4 dias / 3 noites</p>
+              <p class="preco">A partir de R$ 1.800</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destino-card">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.xZzViXprIzzznUS6KYrqhgHaE8%3Fpid%3DApi&f=1&ipt=12375a845f0089cd3470a8be8cd6af50ee8260d7b50940ce7598892058502092&ipo=images" class="card-img-top" alt="Brooklyn Bridge">
+            <div class="card-body text-center">
+              <h5 class="card-title">Brooklyn Bridge</h5>
+              <p class="card-text">Pacote: 5 dias / 4 noites</p>
+              <p class="preco">A partir de R$ 2.300</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao-conteudo parallax">
+    <div class="container">
+      <h2>Contato</h2>
+      <p><strong>Email:</strong> contato@appletravel.com</p>
+      <p><strong>WhatsApp:</strong> +1 (212) 555-7890</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center text-light py-4">
+      <p>© 2025 Apple Travel NYC. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

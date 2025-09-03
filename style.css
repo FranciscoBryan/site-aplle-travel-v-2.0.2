@@ -1,0 +1,135 @@
+/* === Estilos Gerais === */
+body {
+  background-color: #0d0d0d; /* Fundo principal escuro */
+  color: #ffffff; /* Texto padrão branco */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Navbar === */
+.titulo-principal {
+  color: #ffc400; /* Dourado */
+  font-weight: 800;
+}
+
+.navbar-dark .nav-link {
+  color: #ffffff; /* Links brancos */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover {
+  color: #ffc400; /* Hover dourado */
+}
+
+/* === Seções === */
+.secao-conteudo {
+  padding: 4rem 2rem;
+  background-color: #141414; /* Fundo escuro */
+  border-top: 2px solid #bfa14b; /* Linha dourada */
+  color: #e29b00; /* Texto dourado leve */
+}
+
+/* === Carrossel === */
+.carrossel-container {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+.carrossel-conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+/* === Botões === */
+.btn-warning {
+  background-color: #bfa14b;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+.btn-warning:hover {
+  background-color: #e0b84b;
+  color: #000;
+}
+
+/* === Cards dos Destinos === */
+.destino-card {
+  background-color: #1e1e1e; /* Fundo escuro */
+  border: 1px solid #bfa14b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destino-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 196, 0, 0.4);
+}
+
+.destino-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.destino-card .card-body {
+  background-color: #1e1e1e; /* Fundo interno escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+.destino-card .card-title {
+  color: #ffc400; /* Título dourado */
+  font-weight: 700;
+}
+
+.destino-card .preco {
+  color: #ffc400; /* Preço dourado */
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* === Footer === */
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 2px solid #bfa14b;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .carrossel-container {
+    height: 60vh;
+  }
+  .carousel-item img {
+    height: 60vh;
+  }
+  .secao-conteudo {
+    padding: 3rem 1rem;
+  }
+  .destino-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrossel-container {
+    height: 50vh;
+  }
+  .carousel-item img {
+    height: 50vh;
+  }
+  .destino-card img {
+    height: 180px;
+  }
+}
